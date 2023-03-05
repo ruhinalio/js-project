@@ -1,0 +1,389 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+:root {
+  --normal-shift-color: #262626;
+  --introduce-color: #b5b5b5;
+  --introduce-color-black: #6f6d6d;
+  --white-color: #fff;
+  --orange-color: #FFC62D;
+  --blue-color: #11D5ED;
+}
+
+.header {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  max-width: 150px;
+}
+.header .logo img {
+  width: 100%;
+}
+.header ul {
+  display: flex;
+  gap: 0 20px;
+}
+.header ul .menu-active {
+  text-decoration: line-through;
+}
+.header ul li a {
+  color: var(--normal-shift-color);
+  font-size: x-large;
+  font-weight: 700;
+}
+.header ul li a:hover {
+  text-decoration: line-through;
+}
+
+.introduce {
+  max-width: 35%;
+  margin: 7rem auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem 0;
+}
+.introduce h1 {
+  font-weight: 600;
+  font-size: 6.5rem;
+  color: var(--normal-shift-color);
+}
+.introduce h2 {
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: var(--introduce-color);
+}
+
+.social h3 {
+  font-size: x-large;
+  font-weight: 600;
+}
+.social-media i {
+  font-size: 1.2rem;
+  color: var(--introduce-color-black);
+}
+
+.inventing {
+  margin: 3rem auto;
+}
+.inventing p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--introduce-color);
+  width: 20%;
+  padding: 1rem;
+}
+.inventing h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-align: left;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.works {
+  display: flex;
+  gap: 0 20px;
+}
+.works-left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+}
+.works-left .work {
+  max-width: 95%;
+  height: 472px;
+  position: relative;
+  margin: 1rem 0;
+}
+.works-left .work .product {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 1rem;
+  background-color: var(--white-color);
+  width: 200px;
+}
+.works-left .work:hover {
+  max-width: 85%;
+  height: 450px;
+}
+.works-left .work:hover .product {
+  opacity: 1 !important;
+}
+.works-left .work1 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_4-1080x1080.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.works-left .work2 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_2-1080x1080.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.works-left a {
+  font-size: medium;
+  font-weight: 600;
+  color: var(--normal-shift-color);
+}
+.works-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+  margin-top: 2rem;
+  width: 48%;
+}
+.works-right .work {
+  max-width: 100%;
+  height: 472px;
+  position: relative;
+  margin: 1rem 0;
+}
+.works-right .work .product {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 1rem;
+  background-color: var(--white-color);
+  width: 200px;
+}
+.works-right .work:hover {
+  max-width: 85%;
+  height: 450px;
+}
+.works-right .work:hover .product {
+  opacity: 1 !important;
+}
+.works-right .work3 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_3-1-1536x1536.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.works-right .work4 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_1-1080x1080.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+}
+.branding-left {
+  width: 33%;
+}
+.branding-left h3 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--normal-shift-color);
+}
+.branding-left h3:hover {
+  text-decoration: line-through;
+}
+.branding-left .brand-active {
+  text-decoration: line-through !important;
+}
+.branding-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  width: 55%;
+}
+.branding-right p {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: var(--introduce-color-black);
+}
+.branding-right .branding-active {
+  color: var(--normal-shift-color) !important;
+}
+
+.slides {
+  display: flex;
+  gap: 0 10px;
+  margin: 3rem auto;
+}
+.slides .slide {
+  width: 24%;
+  height: 600px;
+  position: relative;
+}
+.slides .slide-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0 10px;
+}
+.slides .slide-content p {
+  font-size: 1rem;
+  color: var(--introduce-color-black);
+  font-weight: 600;
+}
+.slides .slide-content h3 {
+  font-size: 2rem;
+  color: var(--normal-shift-color);
+  font-weight: 600;
+}
+.slides .slide-content h4 {
+  font-size: 1rem;
+  color: var(--normal-shift-color);
+  font-weight: 600;
+}
+.slides .slide:nth-child(1) {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slides .slide:nth-child(2) {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slides .slide:nth-child(3) {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slides .slide:nth-child(4) {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.awards {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--introduce-color-black);
+}
+.awards-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.awards-left h3 {
+  width: 200px;
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: var(--normal-shift-color);
+  font-weight: 700;
+}
+.awards-left p {
+  font-size: 1.5rem;
+  color: var(--introduce-color-black);
+  font-weight: 400;
+}
+.awards-right {
+  width: 50%;
+}
+.awards-right-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--introduce-color-black);
+}
+.awards-right-element h3 {
+  width: 150px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--normal-shift-color);
+}
+.awards-right-element img {
+  max-width: 150px;
+  max-height: 80px;
+}
+
+.foter {
+  padding: 3rem 0;
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.foter a {
+  color: var(--white-color);
+}
+.foter span :hover {
+  color: var(--orange-color);
+}
+.foter .footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 0;
+}
+.foter .footer-top h3 {
+  font-size: 2.5rem;
+}
+.foter .footer-top h3 span {
+  color: var(--blue-color);
+}
+.foter .footer-top h3 span:hover {
+  color: #FFC62D;
+}
+.foter .footer-center {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--introduce-color-black);
+}
+.foter .footer-center-left ul li {
+  margin: 1rem 0;
+}
+.foter .footer-center-right {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 30px;
+}
+.foter .footer-center-right ul li {
+  margin: 1rem 0;
+}
+.foter .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foter .footer-bottom .logo {
+  font-size: 2rem;
+  color: var(--white-color);
+}
+.foter .footer-bottom .last-element {
+  display: flex;
+  gap: 0 30px;
+}/*# sourceMappingURL=homeStyle.css.map */

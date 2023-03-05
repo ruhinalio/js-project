@@ -1,0 +1,406 @@
+// general style
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+// all colors is here
+:root {
+  --normal-shift-color: #262626;
+  --introduce-color: #b5b5b5;
+  --introduce-color-black: #6f6d6d;
+  --white-color: #fff;
+  --orange-color: #FFC62D;
+  --blue-color: #11D5ED;
+}
+
+.header {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    max-width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 0 20px;
+ .menu-active{
+  text-decoration: line-through;
+ }
+    li {
+      a {
+        color: var(--normal-shift-color);
+        font-size: x-large;
+        font-weight: 700;
+        &:hover {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+.introduce {
+  max-width: 35%;
+  margin: 7rem auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem 0;
+  h1 {
+    font-weight: 600;
+    font-size: 6.5rem;
+    color: var(--normal-shift-color);
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: var(--introduce-color);
+  }
+}
+.social {
+  h3 {
+    font-size: x-large;
+    font-weight: 600;
+  }
+  &-media {
+    i {
+      font-size: 1.2rem;
+      color: var(--introduce-color-black);
+    }
+  }
+}
+
+.inventing {
+  margin: 3rem auto;
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--introduce-color);
+    width: 20%;
+    padding: 1rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+
+    text-align: left;
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+.works {
+  display: flex;
+  gap: 0 20px;
+  &-left {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px 0;
+    .work {
+      max-width: 95%;
+      height: 472px;
+      position: relative;
+      // background-color: pink;
+      margin: 1rem 0;
+      .product {
+        opacity: 0;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        padding: 1rem;
+        background-color: var(--white-color);
+        width: 200px;
+      }
+      &:hover {
+        max-width: 85%;
+        height: 450px;
+        .product {
+          opacity: 1 !important;
+        }
+      }
+    }
+    .work1 {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_4-1080x1080.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .work2 {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_2-1080x1080.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    a {
+      font-size: medium;
+      font-weight: 600;
+      color: var(--normal-shift-color);
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 14px 0;
+    margin-top: 2rem;
+    width: 48%;
+    .work {
+      max-width: 100%;
+      height: 472px;
+      position: relative;
+      // background-color: pink;
+      margin: 1rem 0;
+      .product {
+        opacity: 0;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        padding: 1rem;
+        background-color: var(--white-color);
+        width: 200px;
+      }
+      &:hover {
+        max-width: 85%;
+        height: 450px;
+        .product {
+          opacity: 1 !important;
+        }
+      }
+    }
+    .work3 {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_3-1-1536x1536.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .work4 {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_1-1080x1080.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+.branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+
+  &-left {
+    width: 33%;
+    h3 {
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: var(--normal-shift-color);
+      &:hover {
+        text-decoration: line-through;
+      }
+    }
+    .brand-active {
+      text-decoration: line-through !important;
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 55%;
+    p {
+      font-size: 2.3rem;
+      font-weight: 400;
+      color: var(--introduce-color-black);
+    }
+    .branding-active {
+      color: var(--normal-shift-color) !important;
+    }
+  }
+}
+
+.slides {
+  display: flex;
+  gap: 0 10px;
+  margin: 3rem auto;
+  .slide {
+    width: 24%;
+    height: 600px;
+    position: relative;
+    &-content {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 0 10px;
+      p {
+        font-size: 1rem;
+        color: var(--introduce-color-black);
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 2rem;
+        color: var(--normal-shift-color);
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 1rem;
+        color: var(--normal-shift-color);
+        font-weight: 600;
+      }
+    }
+    &:nth-child(1) {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    &:nth-child(4) {
+      background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+.awards {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--introduce-color-black);
+  &-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    h3 {
+      width: 200px;
+      margin: 2rem;
+      font-size: 2.5rem;
+      color: var(--normal-shift-color);
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.5rem;
+      color: var(--introduce-color-black);
+      font-weight: 400;
+    }
+  }
+  &-right {
+    width: 50%;
+
+    &-element {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem 0;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--introduce-color-black);
+      h3 {
+        width: 150px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--normal-shift-color);
+      }
+      img {
+        max-width: 150px;
+        max-height: 80px;
+      }
+    }
+  }
+}
+.foter{
+  padding: 3rem 0;
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/footer_background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  a{
+    color: var(--white-color);
+  }
+  span{
+    :hover{
+      color: var(--orange-color);
+    }
+  }
+  .footer{
+  &-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0;
+    h3{
+      font-size: 2.5rem;
+      span{
+        color:var(--blue-color) ;
+        &:hover{
+          color: #FFC62D;
+        }
+      }
+    }
+  }
+  &-center{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--introduce-color-black);
+    &-left{
+      ul{
+        li{
+          margin: 1rem 0;
+        }
+      }
+    }
+    &-right{
+      width: 20%;
+      
+      display: flex;
+      justify-content: space-between;
+      gap: 0 30px;
+      ul{
+        li{
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      font-size: 2rem;
+      color: var(--white-color);
+    }
+    .last-element{
+      display: flex;
+      gap: 0 30px;
+    }
+  }
+}
+}
