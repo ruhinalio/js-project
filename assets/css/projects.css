@@ -198,11 +198,18 @@ a {
   background-size: cover;
 }
 
+.active-more {
+  display: flex !important;
+}
+
 .button-side {
-  display: flex;
+  display: none;
   justify-content: center;
+  margin: 3rem auto;
 }
 .button-side button {
+  border: none;
+  border-radius: 5px;
   align-items: center;
   align-self: center;
   padding: 1.5rem 3rem;

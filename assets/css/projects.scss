@@ -206,11 +206,18 @@ a {
   }
   
 }
-
+// active class width flex-adding
+.active-more{
+  display: flex !important;
+}
 .button-side{
-display: flex;
+  display: none;
+// display: flex;
 justify-content: center;
+margin: 3rem auto;
     button{
+      border: none;
+      border-radius: 5px;
         align-items: center;
         align-self: center;
         padding: 1.5rem 3rem;
