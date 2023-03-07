@@ -1,0 +1,152 @@
+// general style
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+// all colors is here
+:root {
+  --normal-shift-color: #262626;
+  --introduce-color: #b5b5b5;
+  --introduce-color-black: #6f6d6d;
+  --white-color: #fff;
+  --orange-color: #ffc62d;
+  --blue-color: #11d5ed;
+}
+
+.mansory {
+  display: flex;
+  // justify-content: space-between;
+  &-left {
+    width: 50%;
+    &-top {
+      .project {
+        max-width: 100%;
+        height: 472px;
+        position: relative;
+        // background-color: pink;
+        margin: 1rem 0;
+        &-about {
+          opacity: 0;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          padding: 1rem;
+          background-color: var(--white-color);
+          width: 200px;
+        }
+        &:hover {
+          max-width: 98%;
+          height: 68vh;
+          .project-about {
+            opacity: 1 !important;
+          }
+        }
+      }
+      .project1 {
+        width: 100%;
+        height: 70vh;
+        background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_4-1080x1080.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      .project {
+        max-width: 100%;
+        height: 472px;
+        position: relative;
+        // background-color: pink;
+        margin: 1rem 0;
+        &-about {
+          opacity: 0;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          padding: 1rem;
+          background-color: var(--white-color);
+          width: 200px;
+        }
+        &:hover {
+          max-width: 48%;
+          height: 370px;
+          .project-about {
+            opacity: 1 !important;
+          }
+        }
+      }
+      .project2 {
+        width: 49%;
+        height: 380px;
+        background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_2-1080x1080.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .project3 {
+        width: 49%;
+        height: 380px;
+        background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_3-1-1080x1080.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  &-right {
+    background-color: #11d5ed;
+    &-top {
+      background-color: #11d5ed;
+      z-index: 9999;
+      display: flex;
+      justify-content: space-between;
+
+      .project {
+        max-width: 100%;
+        height: 472px;
+        position: relative;
+        // background-color: pink;
+        margin: 1rem 0;
+        &-about {
+          opacity: 0;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          padding: 1rem;
+          background-color: var(--white-color);
+          width: 200px;
+        }
+        &:hover {
+          max-width: 85%;
+          height: 450px;
+          .project-about {
+            opacity: 1 !important;
+          }
+        }
+      }
+      .project1 {
+        width: 50%;
+        height: 480px;
+        background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_1-1080x1080.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .project2 {
+        width: 50%;
+        height: 480px;
+        background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_6-1536x1536.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}

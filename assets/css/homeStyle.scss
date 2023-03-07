@@ -40,16 +40,43 @@ a {
  .menu-active{
   text-decoration: line-through;
  }
-    li {
+    li { 
+      position: relative;
       a {
         color: var(--normal-shift-color);
-        font-size: x-large;
+        font-size:1.3rem;
         font-weight: 700;
         &:hover {
           text-decoration: line-through;
         }
       }
+      ul{
+        position: absolute;
+        display: none;
+        background-color: var(--white-color);
+      width:180px;
+        padding: 1rem 2rem;
+        border-radius: 10%;
+        margin: .7rem 0;
+        // display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+        font-size: medium;
+        li{
+        
+        a{
+         font-size: medium;
+         font-weight: 400;
+         color: var(--normal-shift-color);
+         &:hover{
+        color: var(--introduce-color-black);
+         }
+        }}
+      }
     }
+  }
+  .active-menu{
+    display: flex !important;
   }
 }
 .introduce {

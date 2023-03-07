@@ -43,13 +43,39 @@ a {
 .header ul .menu-active {
   text-decoration: line-through;
 }
+.header ul li {
+  position: relative;
+}
 .header ul li a {
   color: var(--normal-shift-color);
-  font-size: x-large;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 .header ul li a:hover {
   text-decoration: line-through;
+}
+.header ul li ul {
+  position: absolute;
+  display: none;
+  background-color: var(--white-color);
+  width: 180px;
+  padding: 1rem 2rem;
+  border-radius: 10%;
+  margin: 0.7rem 0;
+  flex-direction: column;
+  gap: 10px 0;
+  font-size: medium;
+}
+.header ul li ul li a {
+  font-size: medium;
+  font-weight: 400;
+  color: var(--normal-shift-color);
+}
+.header ul li ul li a:hover {
+  color: var(--introduce-color-black);
+}
+.header .active-menu {
+  display: flex !important;
 }
 
 .introduce {

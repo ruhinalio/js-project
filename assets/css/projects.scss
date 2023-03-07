@@ -24,35 +24,7 @@ a {
   --blue-color-dark: #0052f8;
 }
 //   page style
-.header {
-  padding: 1.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .logo {
-    max-width: 150px;
-    img {
-      width: 100%;
-    }
-  }
-  ul {
-    display: flex;
-    gap: 0 20px;
-    .menu-active {
-      text-decoration: line-through;
-    }
-    li {
-      a {
-        color: var(--normal-shift-color);
-        font-size: x-large;
-        font-weight: 700;
-        &:hover {
-          text-decoration: line-through;
-        }
-      }
-    }
-  }
-}
+
 
 .flex {
     margin: 5rem auto;
