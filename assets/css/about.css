@@ -24,6 +24,24 @@ a {
   --blue-color: #11d5ed;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  margin: 5rem auto;
+}
+.about h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--normal-shift-color);
+}
+.about p {
+  width: 60%;
+  font-size: 1.4rem;
+  color: var(--normal-shift-color);
+  letter-spacing: 1px;
+}
+
 .images {
   margin: 3rem 0;
 }
@@ -37,7 +55,27 @@ a {
   max-width: 52%;
 }
 
+.workers {
+  margin: 3rem auto;
+}
 .workers-side {
   display: flex;
   justify-content: space-between;
+  gap: 20px 0;
+}
+.workers-side .worker {
+  width: 30%;
+}
+.workers-side .worker h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--normal-shift-color);
+}
+.workers-side .worker h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--blue-color);
+}
+.workers-side .worker img {
+  width: 100%;
 }/*# sourceMappingURL=about.css.map */

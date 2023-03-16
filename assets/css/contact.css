@@ -1,0 +1,121 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+:root {
+  --normal-shift-color: #262626;
+  --introduce-color: #b5b5b5;
+  --introduce-color-black: #6f6d6d;
+  --white-color: #fff;
+  --orange-color: #ffc62d;
+  --blue-color: #11d5ed;
+  --blue-dark: #0052f8;
+}
+
+.head {
+  margin: 4rem auto;
+}
+.head h2 {
+  font-size: 3rem;
+  color: var(--normal-shift-color);
+  font-weight: 700;
+  width: 35%;
+}
+.head p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: var(--normal-shift-color);
+  width: 45%;
+}
+
+.mails {
+  margin: 7rem auto;
+}
+.mails-side {
+  display: flex;
+  justify-content: space-between;
+}
+.mails-side .mail-head {
+  font-size: 2rem;
+  color: var(--normal-shift-color);
+  font-weight: 700;
+}
+.mails-side .mail-content {
+  font-size: 1.5rem;
+  color: var(--normal-shift-color);
+  font-weight: 400;
+}
+.mails-side .mail-content a {
+  color: var(--normal-shift-color);
+}
+.mails-side .mail-content a:hover {
+  color: var(--blue-color);
+}
+
+.images {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/post_7-1660x934.jpg);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.contact {
+  margin: 7rem auto;
+}
+.contact-head {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-head p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.contact-form .form-side {
+  position: relative;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .form-side h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--normal-shift-color);
+  text-align: center;
+}
+.contact-form .form-side input {
+  width: 45%;
+  height: 2rem;
+  margin: 0 auto;
+  padding: 1rem 0.4rem;
+}
+.contact-form button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 0.5rem;
+  color: var(--white-color);
+  background-color: var(--blue-dark);
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}/*# sourceMappingURL=contact.css.map */

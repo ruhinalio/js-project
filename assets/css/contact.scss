@@ -1,0 +1,125 @@
+// general style
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  // all colors is here
+  :root {
+    --normal-shift-color: #262626;
+    --introduce-color: #b5b5b5;
+    --introduce-color-black: #6f6d6d;
+    --white-color: #fff;
+    --orange-color: #ffc62d;
+    --blue-color: #11d5ed;
+    --blue-dark: #0052f8;
+  }
+
+//   page style
+.head{
+    margin: 4rem auto;
+h2{
+    font-size: 3rem;
+    color: var(--normal-shift-color);
+    font-weight: 700;
+    width: 35%;
+}
+p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--normal-shift-color);
+    width: 45%;
+}
+}
+.mails{
+    margin: 7rem auto;
+    &-side{
+        display: flex;
+        justify-content: space-between;
+     .mail{
+        &-head{
+            font-size: 2rem;
+            color: var(--normal-shift-color);
+            font-weight: 700;
+        }
+        &-content{
+            font-size: 1.5rem;
+            color: var(--normal-shift-color);
+            font-weight: 400;
+            a{
+                color: var(--normal-shift-color);
+                &:hover{
+                    color: var(--blue-color);
+                }
+            }
+          
+        }
+     }
+    }
+}
+.images{
+    background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/post_7-1660x934.jpg);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.contact{
+    margin: 7rem auto;
+    &-head{
+        width: 50%;
+        margin: 0 auto;
+        p{
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+    &-form{
+        
+    .form-side{
+      position: relative;
+        margin: 1.5rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--normal-shift-color);
+            text-align: center;
+        }
+        input{
+           width: 45%;
+            height: 2rem;
+            margin: 0 auto;
+            padding: 1rem .4rem;
+
+        }
+    }
+   button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem .5rem ;
+    color: var(--white-color);
+    background-color: var(--blue-dark);
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+   }
+    }
+}
