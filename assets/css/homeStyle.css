@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-  max-width: 1400px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -20,8 +20,8 @@ a {
   --introduce-color: #b5b5b5;
   --introduce-color-black: #6f6d6d;
   --white-color: #fff;
-  --orange-color: #FFC62D;
-  --blue-color: #11D5ED;
+  --orange-color: #ffc62d;
+  --blue-color: #11d5ed;
 }
 
 .header {
@@ -29,6 +29,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .fa-bars {
+  font-size: 1.3rem;
+  color: var(--normal-shift-color);
+  display: none;
 }
 .header .logo {
   max-width: 150px;
@@ -57,7 +62,7 @@ a {
 .header ul li ul {
   position: absolute;
   display: none;
-  background-color: var(--white-color);
+  background-color: var(--introduce-color-black);
   width: 180px;
   padding: 1rem 2rem;
   border-radius: 10%;
@@ -74,28 +79,35 @@ a {
 .header ul li ul li a:hover {
   color: var(--introduce-color-black);
 }
+.header ul .pages {
+  background-color: var(--introduce-color);
+  display: block;
+  z-index: 999;
+  width: 140px;
+  position: absolute;
+}
 .header .active-menu {
   display: flex !important;
 }
 
 .introduce {
-  max-width: 35%;
-  margin: 7rem auto;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem 0;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
 }
-.introduce h1 {
+.introduce-left h1 {
   font-weight: 600;
   font-size: 6.5rem;
   color: var(--normal-shift-color);
 }
-.introduce h2 {
+.introduce-left h2 {
   font-weight: 300;
   font-size: 3.5rem;
   color: var(--introduce-color);
+}
+.introduce-right {
+  width: 200px;
 }
 
 .social h3 {
@@ -254,7 +266,7 @@ a {
   margin: 3rem auto;
 }
 .slides .slide {
-  width: 24%;
+  width: 33%;
   height: 600px;
   position: relative;
 }
@@ -292,11 +304,6 @@ a {
   background-size: cover;
 }
 .slides .slide:nth-child(3) {
-  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.slides .slide:nth-child(4) {
   background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
   background-position: center;
   background-size: cover;
@@ -379,7 +386,7 @@ a {
   color: var(--blue-color);
 }
 .foter .footer-top h3 span:hover {
-  color: #FFC62D;
+  color: #ffc62d;
 }
 .foter .footer-center {
   display: flex;
@@ -412,4 +419,204 @@ a {
 .foter .footer-bottom .last-element {
   display: flex;
   gap: 0 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  * {
+    overflow-x: hidden !important;
+  }
+  .fa-bars {
+    display: block !important;
+  }
+  .menu-links {
+    display: none !important;
+  }
+  .introduce {
+    max-width: 50%;
+  }
+  .introduce h1 {
+    font-size: 5.5rem;
+  }
+  .introduce h2 {
+    font-size: 2.5rem;
+  }
+  .social h3 {
+    font-size: medium;
+  }
+  .social-media i {
+    font-size: 1.2rem;
+  }
+  .branding-left h3 {
+    font-size: 2.7rem;
+  }
+  .branding-right p {
+    font-size: 2rem;
+  }
+  .slides .slide3 {
+    display: none;
+  }
+  .slides .slide1 {
+    width: 49%;
+  }
+  .slides .slide2 {
+    width: 49%;
+  }
+  .slides .slide-content p {
+    font-size: 0.9rem;
+  }
+  .slides .slide-content h3 {
+    font-size: 1.7rem;
+  }
+  .awards-left h3 {
+    font-size: 2.3rem;
+  }
+  .awards-left p {
+    font-size: 1.3rem;
+  }
+  .awards-right h3 {
+    font-size: 1.3rem;
+  }
+  .awards-right img {
+    width: 130px;
+    height: 70px;
+  }
+  .foter .footer-top h3 {
+    font-size: 2.3rem;
+  }
+  .foter .footer-center {
+    font-size: medium;
+  }
+  .foter .footer-center-right {
+    width: auto;
+  }
+  .foter .footer-bottom .logo {
+    font-size: 1.7rem;
+  }
+  .foter .footer-bottom .last-element {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .logo {
+    width: 100px;
+  }
+  .introduce {
+    width: 70%;
+    margin: 3rem auto;
+    justify-content: center;
+    align-self: center;
+  }
+  .introduce-right {
+    display: none;
+  }
+  .introduce dd {
+    display: none !important;
+  }
+  .introduce h1 {
+    font-size: 4.4rem;
+  }
+  .introduce h2 {
+    font-size: 2.3rem;
+  }
+  .social {
+    font-size: medium;
+  }
+  .inventing p {
+    font-size: 1.3rem;
+    width: auto;
+  }
+  .inventing h3 {
+    width: auto;
+    font-size: 2rem;
+  }
+  .works {
+    flex-direction: column-reverse;
+    gap: 14px 0;
+  }
+  .works-left {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .works-left .work {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .works-right {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .works-right .work {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .branding {
+    flex-direction: column;
+    gap: 14px 0;
+  }
+  .branding-left {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3rem;
+  }
+  .branding-right {
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slides .slide2 {
+    display: none;
+  }
+  .slides .slide {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .awards {
+    flex-direction: column;
+  }
+  .awards-left {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+  .awards-right {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .awards-right-element {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+  }
+  .awards-right-element h3 {
+    width: auto;
+  }
+  .awards-right-element img {
+    width: auto;
+  }
+  .foter .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .foter .footer-top {
+    flex-direction: column;
+  }
+  .foter .footer-center {
+    flex-direction: column;
+  }
+  .foter .footer-center-right {
+    flex-direction: column;
+  }
+  .foter .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px 0;
+  }
+  .foter .footer-bottom .last-element {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px 0;
+  }
 }/*# sourceMappingURL=homeStyle.css.map */

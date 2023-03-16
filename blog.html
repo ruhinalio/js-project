@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -19,13 +20,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- css links -->
     <link rel="stylesheet" href="./assets/css/homeStyle.css" />
-    <link rel="stylesheet" href="./assets/css/mansoryPage.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+
     <title>Dora</title>
   </head>
   <body>
-    <!-- header side -->
     <header class="header container">
       <div class="logo">
         <img
@@ -33,67 +36,106 @@
           alt=""
         />
       </div>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
+      <i class="fa-solid fa-bars"></i>
+      <ul class="menu-links"> 
+        <li><a href="./index.html" class="menu-active">Home</a></li>
         <li class="projects-menu">
-          <a class="menu-active">Projects</a>
+          <a>Projects</a>
           <ul class="projects-side">
             <li><a href="./projects.html">Flex</a></li>
-            <li><a href="#">Mansory</a></li>
-            <li><a href="#">Slider</a></li>
-            <li><a href="#">Creative</a></li>
-            <li><a href="#">Before & After</a></li>
+            <li><a href="./slider.html">Slider</a></li>
+           
           </ul>
         </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pages</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li>
+          <a href="#">Pages</a>
+        <ul class="pages">
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">404 Page</a></li>
+        </ul>
+        </li>
       </ul>
     </header>
+    <section class="blog container blog1 blog-active">
+      <div class="blog-side">
+        <div class="blog-side-top">
+          <div class="card card1">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>
+                10 Strategies for Successful Business Growth in the Digital Age
+              </h2>
+              <p>Feb,01,2023</p>
+            </div>
+          </div>
 
-    <section class="mansory container">
-      <div class="mansory-left">
-        <div class="mansory-left-top">
-          <div class="project project1">
-            <div class="project-about">
-              <h3>Gen Z Glasses</h3>
-              <span><a href="#">Product Design</a></span>
+          <div class="card card2">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>The Hyper Flexible Seamlessly Connected Modern Working</h2>
+              <p>Oct,26,2021</p>
+            </div>
+          </div>
+          <div class="card card3">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>How to generate leads with PPC in your business?</h2>
+              <p>May,07,2022</p>
             </div>
           </div>
         </div>
-        <div class="mansory-left-bottom">
-          <div class="project project2">
-            <div class="project-about">
-              <h3>Gen Z Glasses</h3>
-              <span><a href="#">Product Design</a></span>
+        <div class="blog-side-bottom">
+          <div class="card card1">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>How an Idea Nobody Believed in Led to 8 Million Dollars</h2>
+              <p>May,29,22</p>
             </div>
           </div>
-          <div class="project project3">
-            <div class="project-about">
-              <h3>Gen Z Glasses</h3>
-              <span><a href="#">Product Design</a></span>
+          <div class="card card2">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>How to Reject the Status Quo and Redefine Your Success</h2>
+              <p>May,29,22</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="mansory-right">
-        <div class="mansory-right-top">
-          <div class="project project1">
-            <div class="project-about">
-              <h3>Gen Z Glasses</h3>
-              <span><a href="#">Product Design</a></span>
-            </div>
-          </div>
-          <div class="project project2">
-            <div class="project-about">
-              <h3>Gen Z Glasses</h3>
-              <span><a href="#">Product Design</a></span>
+          <div class="card card3">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>3 Vision Board Alternatives You Must Try</h2>
+              <p>May,29,22</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="blog container blog2">
+      <div class="blog-side">
+        <div class="blog-side-top">
+          <div class="card card1">
+            <div class="card-content">
+              <p>business, marketing</p>
+              <h2>
+                The Smartest People in The Room Often Overlook This Critical Attribute to Success
+              </h2>
+              <p>Feb,01,2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page container">
+      <button class="change left-page "><img src="./assets/svgs/chevron-left.svg" alt="" /></button>
 
-    <!-- footer side -->
+      <button class="page1 page-active">1</button>
+      <button class="page2">2</button>
+
+      <button class="change right-page active-change">
+        <img src="./assets/svgs/chevron-right.svg" alt="" />
+      </button>
+    </section>
     <footer class="foter">
       <div class="container footer">
         <div class="footer-top">
@@ -153,7 +195,8 @@
         </div>
       </div>
     </footer>
-    <!-- js side -->
+    <!-- mine js -->
     <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/blog.js"></script>
   </body>
 </html>

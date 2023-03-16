@@ -1,0 +1,27 @@
+@import url(./tablet.scss);
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+:root {
+  --normal-shift-color: #262626;
+  --introduce-color: #b5b5b5;
+  --introduce-color-black: #6f6d6d;
+  --white-color: #fff;
+  --orange-color: #ffc62d;
+  --blue-color: #11d5ed;
+  --blue-color-dark: #0052f8;
+}/*# sourceMappingURL=slider.css.map */

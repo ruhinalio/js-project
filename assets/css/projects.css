@@ -1,9 +1,11 @@
+@import url(./tablet.scss);
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
@@ -190,4 +192,38 @@ a {
   font-size: 1.7rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  .flex {
+    margin: 2rem auto;
+  }
+  .flex-top {
+    flex-direction: column;
+  }
+  .flex-top .project {
+    width: 100%;
+    background-position: center;
+    height: 400px;
+  }
+  .flex-bottom {
+    flex-direction: column;
+  }
+  .flex-bottom .project {
+    width: 100%;
+    background-position: center;
+    height: 400px;
+  }
+  .flex-adding {
+    flex-direction: column;
+  }
+  .flex-adding .project {
+    height: 400px;
+    width: 100%;
+    background-position: center;
+  }
+  .button-side button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=projects.css.map */

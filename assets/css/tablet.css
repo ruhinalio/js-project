@@ -1,0 +1,81 @@
+@media only screen and (max-width: 991px) {
+  * {
+    overflow-x: hidden !important;
+  }
+  .fa-bars {
+    display: block !important;
+  }
+  .menu-links {
+    display: none !important;
+  }
+  .introduce {
+    max-width: 50%;
+  }
+  .introduce h1 {
+    font-size: 5.5rem;
+  }
+  .introduce h2 {
+    font-size: 2.5rem;
+  }
+  .social h3 {
+    font-size: medium;
+  }
+  .social-media i {
+    font-size: 1.2rem;
+  }
+  .branding-left h3 {
+    font-size: 2.7rem;
+  }
+  .branding-right p {
+    font-size: 2rem;
+  }
+  .slides .slide3 {
+    display: none;
+  }
+  .slides .slide1 {
+    width: 49%;
+  }
+  .slides .slide2 {
+    width: 49%;
+  }
+  .slides .slide-content p {
+    font-size: 0.9rem;
+  }
+  .slides .slide-content h3 {
+    font-size: 1.7rem;
+  }
+  .awards-left h3 {
+    font-size: 2.3rem;
+  }
+  .awards-left p {
+    font-size: 1.3rem;
+  }
+  .awards-right h3 {
+    font-size: 1.3rem;
+  }
+  .awards-right img {
+    width: 130px;
+    height: 70px;
+  }
+  .foter .footer-top h3 {
+    font-size: 2.3rem;
+  }
+  .foter .footer-center {
+    font-size: medium;
+  }
+  .foter .footer-center-right {
+    width: auto;
+  }
+  .foter .footer-bottom .logo {
+    font-size: 1.7rem;
+  }
+  .foter .footer-bottom .last-element {
+    font-size: 1.2rem;
+  }
+  .flex {
+    margin: 4rem auto;
+  }
+  .flex-top {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=tablet.css.map */

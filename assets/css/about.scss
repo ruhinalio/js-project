@@ -1,0 +1,42 @@
+// general style
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  // all colors is here
+  :root {
+    --normal-shift-color: #262626;
+    --introduce-color: #b5b5b5;
+    --introduce-color-black: #6f6d6d;
+    --white-color: #fff;
+    --orange-color: #ffc62d;
+    --blue-color: #11d5ed;
+  }
+.images{
+    margin: 3rem 0;
+    &-side{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 14px;
+        width: 100%;
+        img{
+           max-width: 52%;
+        }
+    }
+}  
+.workers{
+    &-side{
+        display: flex;
+        justify-content: space-between;
+    }
+}

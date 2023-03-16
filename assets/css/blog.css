@@ -1,0 +1,162 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+:root {
+  --normal-shift-color: #262626;
+  --introduce-color: #b5b5b5;
+  --introduce-color-black: #6f6d6d;
+  --white-color: #f9f9f9;
+  --orange-color: #ffc62d;
+  --blue-color: #11d5ed;
+}
+
+.blog-side {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+}
+.blog-side .card {
+  width: 33%;
+  height: 80vh;
+  position: relative;
+  background-color: #ffc62d;
+}
+.blog-side .card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+.blog-side .card-content p {
+  max-width: 190px;
+  margin: 0.7rem 0;
+  color: var(--introduce-color-black);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.blog-side .card-content h2 {
+  max-width: 300px;
+  color: var(--introduce-color-black);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.blog-side-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 14px;
+}
+.blog-side-top .card1 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/post_7-1660x934.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.blog-side-top .card2 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_2-1660x934.jpg);
+  background-position: top;
+  background-size: cover;
+}
+.blog-side-top .card3 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1-1660x934.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.blog-side-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 14px;
+}
+.blog-side-bottom .card1 {
+  background-position: bottom;
+  background-size: cover;
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_3-1660x934.jpg);
+}
+.blog-side-bottom .card2 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_4-1660x934.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.blog-side-bottom .card3 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_5-1660x934.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.blog1 {
+  display: none;
+}
+
+.blog2 {
+  display: none;
+}
+.blog2 .card1 {
+  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_6-1660x934.jpg);
+}
+
+.blog-active {
+  display: block !important;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+.page button {
+  border: none;
+  background-color: #fff;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.page button:hover {
+  background-color: var(--normal-shift-color);
+  color: var(--white-color);
+}
+.page .change {
+  display: none;
+}
+.page .active-change {
+  display: inline-block !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .blog-side-top {
+    flex-direction: column;
+    gap: 14px 0;
+  }
+  .blog-side-bottom {
+    gap: 14px 0;
+    flex-direction: column;
+  }
+  .blog-side .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .page button {
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    align-items: center;
+  }
+}/*# sourceMappingURL=blog.css.map */

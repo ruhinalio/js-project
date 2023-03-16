@@ -26,6 +26,7 @@ elements.forEach((element, index) => {
     elements.forEach((el, i) => {
       if (i === index) {
         el.classList.add("brand-active");
+        
       } else {
         el.classList.remove("brand-active");
       }

@@ -1,0 +1,111 @@
+@media only screen and (max-width: 991px) {
+    * {
+      overflow-x: hidden !important;
+    }
+    .fa-bars {
+      display: block !important;
+    }
+    .menu-links {
+      display: none !important;
+    }
+    .introduce {
+      max-width: 50%;
+      h1 {
+        font-size: 5.5rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .social {
+      h3 {
+        font-size: medium;
+      }
+      &-media {
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .branding {
+      &-left {
+        h3 {
+          font-size: 2.7rem;
+        }
+      }
+      &-right {
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+    .slides {
+      .slide3 {
+        display: none;
+      }
+      .slide1 {
+        width: 49%;
+      }
+      .slide2 {
+        width: 49%;
+      }
+      .slide {
+        &-content {
+          p {
+            font-size: 0.9rem;
+          }
+          h3 {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+    .awards {
+      &-left {
+        h3 {
+          font-size: 2.3rem;
+        }
+        p {
+          font-size: 1.3rem;
+        }
+      }
+      &-right {
+        h3 {
+          font-size: 1.3rem;
+        }
+        img {
+          width: 130px;
+          height: 70px;
+        }
+      }
+    }
+    .foter {
+      .footer {
+        &-top {
+          h3 {
+            font-size: 2.3rem;
+          }
+        }
+        &-center {
+          font-size: medium;
+          &-right {
+            width: auto;
+          }
+        }
+        &-bottom {
+          .logo {
+            font-size: 1.7rem;
+          }
+          .last-element {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .flex{
+      margin: 4rem auto;
+      &-top{
+        flex-direction: column;
+      }
+    }
+  }

@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -19,8 +20,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- css links -->
     <link rel="stylesheet" href="./assets/css/homeStyle.css" />
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Dora</title>
   </head>
   <body>
@@ -31,27 +36,58 @@
           alt=""
         />
       </div>
-      <ul>
+      <i class="fa-solid fa-bars"></i>
+      <ul class="menu-links"> 
         <li><a href="./index.html" class="menu-active">Home</a></li>
         <li class="projects-menu">
-          <a >Projects</a>
+          <a>Projects</a>
           <ul class="projects-side">
             <li><a href="./projects.html">Flex</a></li>
-            <li><a href="./mansoty.html">Mansory</a></li>
-            <li><a href="#">Slider</a></li>
-            <li><a href="#">Creative</a></li>
-            <li><a href="#">Before & After</a></li>
+            <li><a href="./slider.html">Slider</a></li>
+           
           </ul>
         </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pages</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li>
+          <a href="#">Pages</a>
+        <ul class="pages">
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">404 Page</a></li>
+        </ul>
+        </li>
       </ul>
     </header>
     <section class="introduce container">
-      <h1>Dorya</h1>
-      <h2>We Design Brands</h2>
-      <h2>Since 1995</h2>
+      <div data-aos="fade-right"
+      class="introduce-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <h1>Dorya</h1>
+        <h2>We Design Brands</h2>
+        <h2>Since 1995</h2>
+      </div>
+      <section 
+      data-aos="fade-left"
+      
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+      class="dd introduce-right">
+        <div class="hero__img-svg-container">
+          <svg class="hero__img-svg" viewBox="0 0 320 640" preserveAspectRatio="xMinYMin meet">
+              <path fill-rule="evenodd" fill="url(#hero__img-pattern-a6a6c15)" d="M-0.000,638.993 L-0.000,512.000 C106.039,512.000 192.000,426.038 192.000,320.000 C192.000,213.961 106.039,128.000 -0.000,128.000 L-0.000,0.006 C176.224,0.277 319.000,143.212 319.000,319.500 C319.000,495.788 176.224,638.723 -0.000,638.993 Z"/>
+              <defs>
+                  <pattern id="hero__img-pattern-a6a6c15" patternUnits="userSpaceOnUse" width="320" height="640">
+                      <image class="hero__img-image" xlink:href="https://dorya.deothemes.com/wp-content/uploads/2023/02/hero_img-1.jpg" x="0" y="0"></image>
+                  </pattern>
+              </defs>
+          </svg>
+      </div>
+      </section>
+     
     </section>
+
+    
     <div class="social container">
       <h3>Social media:</h3>
       <div class="social-media">
@@ -127,41 +163,28 @@
       </div>
     </section>
     <section class="slides container">
-      <div class="slide">
+      <div class="slide slide1">
         <div class="slide-content">
           <p>Buizness, Marketing</p>
           <h3>3 Vision Board Alternatives You Must Try</h3>
           <h4>October 27, 2021</h4>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide slide2">
         <div class="slide-content">
           <p>Buizness, Marketing</p>
           <h3>3 Vision Board Alternatives You Must Try</h3>
           <h4>October 27, 2021</h4>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide slide3">
         <div class="slide-content">
           <p>Buizness, Marketing</p>
           <h3>3 Vision Board Alternatives You Must Try</h3>
           <h4>October 27, 2021</h4>
         </div>
       </div>
-      <div class="slide">
-        <div class="slide-content">
-          <p>Buizness, Marketing</p>
-          <h3>3 Vision Board Alternatives You Must Try</h3>
-          <h4>October 27, 2021</h4>
-        </div>
-      </div>
-      <!-- <div class="slide">
-  <div class="slide-content">
-<p>Buizness, Marketing</p>
-<h3>3 Vision Board Alternatives You Must Try</h3>
-<h4>October 27, 2021</h4>
-  </div>
-</div> -->
+    
     </section>
     <section class="awards container">
       <div class="awards-left">
@@ -266,6 +289,12 @@
         </div>
       </div>
     </footer>
+    <!-- aos js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- mine js -->
     <script src="./assets/js/home.js"></script>
   </body>
 </html>
