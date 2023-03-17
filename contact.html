@@ -104,19 +104,26 @@
           <div class="form-top">
             <div class="name form-side">
               <h2>Name*</h2>
-              <input type="text" name="name" />
+              <input autocomplete="none"  type="text" name="name" />
             </div>
             <div class="mail form-side">
               <h2>E-mail*</h2>
-              <input type="text" name="email" />
+              <input autocomplete="none" type="text" name="email" />
             </div>
           </div>
           <div class="message form-side">
             <h2>Message*</h2>
-            <input type="text" name="message" />
+            <input autocomplete="none"  type="text" name="message" />
           </div>
-          <button type="reset">Send Message</button>
+          <button type="reset" id="send-btn">Send Message</button>
         </form>
+      </div>
+      <div class="popupp">
+        <div class="popupp-content">
+          <i class="fa-solid fa-x"></i>
+          <p>Your message has been sent. Will be answered soon</p>
+        </div>
+        
       </div>
     </section>
     <footer class="foter">
@@ -191,5 +198,6 @@
     </script>
     <!-- mine js -->
     <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/contact.js"></script>
   </body>
 </html>

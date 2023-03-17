@@ -27,6 +27,9 @@ a {
 
 .head {
   margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
 }
 .head h2 {
   font-size: 3rem;
@@ -106,7 +109,13 @@ a {
   width: 45%;
   height: 2rem;
   margin: 0 auto;
-  padding: 1rem 0.4rem;
+  padding: 1.5rem 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border: 0.8px solid var(--normal-shift-color);
+}
+.contact-form .form-side input:focus {
+  border: none;
 }
 .contact-form button {
   position: absolute;
@@ -118,4 +127,30 @@ a {
   border: none;
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+.popupp {
+  display: none;
+  width: 200px;
+  border: 1px solid var(--introduce-color);
+  position: fixed;
+  left: 20px;
+  top: 30px;
+}
+.popupp-content {
+  position: relative;
+}
+.popupp-content i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.popupp-content p {
+  position: absolute;
+  top: 30px;
+}
+
+.pop-active {
+  display: block !important;
 }/*# sourceMappingURL=contact.css.map */

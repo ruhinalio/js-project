@@ -27,6 +27,9 @@
 //   page style
 .head{
     margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
 h2{
     font-size: 3rem;
     color: var(--normal-shift-color);
@@ -106,7 +109,13 @@ p{
            width: 45%;
             height: 2rem;
             margin: 0 auto;
-            padding: 1rem .4rem;
+            padding: 1.5rem .5rem;
+            font-size: 1.5rem;
+            border: none;
+            border: .8px solid var(--normal-shift-color);
+            &:focus{
+                border: none;
+            }
 
         }
     }
@@ -122,4 +131,29 @@ p{
     font-weight: 500;
    }
     }
+}
+.popupp{
+    display: none;
+    width:200px ;
+    border: 1px solid var(--introduce-color);
+    position: fixed;
+    left: 20px;
+    top: 30px;
+    &-content{
+        position: relative;
+        i{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+        p{
+            position: absolute;
+            top: 30px;
+
+        }
+    }
+}
+.pop-active{
+    display: block !important;
 }

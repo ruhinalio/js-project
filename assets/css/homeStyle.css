@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -164,11 +168,15 @@ a {
   width: 200px;
 }
 .works-left .work:hover {
-  max-width: 85%;
-  height: 450px;
+  max-width: 95%;
+  height: 440px;
+  -webkit-animation: shadow-drop-2-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-2-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .works-left .work:hover .product {
   opacity: 1 !important;
+  -webkit-animation: shadow-drop-tr 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-tr 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .works-left .work1 {
   background-image: url(https://dorya.deothemes.com/wp-content/uploads/2023/02/project_4-1080x1080.jpg);
@@ -208,8 +216,10 @@ a {
   width: 200px;
 }
 .works-right .work:hover {
-  max-width: 85%;
-  height: 450px;
+  max-width: 95%;
+  height: 44s0px;
+  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .works-right .work:hover .product {
   opacity: 1 !important;
@@ -235,7 +245,7 @@ a {
   width: 33%;
 }
 .branding-left h3 {
-  font-size: 3.4rem;
+  font-size: 3.3rem;
   font-weight: 700;
   color: var(--normal-shift-color);
 }
@@ -257,56 +267,56 @@ a {
   color: var(--introduce-color-black);
 }
 .branding-right .branding-active {
-  color: var(--normal-shift-color) !important;
+  color: var(--orange-color) !important;
 }
 
-.slides {
+.slider h2 {
+  font-size: 3.3rem;
+  margin: 3rem 0 3rem 2rem;
+  font-weight: 700;
+  color: var(--normal-shift-color);
+}
+.slider-side {
+  width: 100%;
   display: flex;
-  gap: 0 10px;
+  padding: 0 20px;
+}
+.slider .slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.slider .slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slider .slide.active {
+  flex: 10;
+}
+.slider .slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+.slider .more-blog {
+  text-align: center;
   margin: 3rem auto;
 }
-.slides .slide {
-  width: 33%;
-  height: 600px;
-  position: relative;
-}
-.slides .slide-content {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 0 10px;
-}
-.slides .slide-content p {
-  font-size: 1rem;
-  color: var(--introduce-color-black);
-  font-weight: 600;
-}
-.slides .slide-content h3 {
-  font-size: 2rem;
+.slider .more-blog a {
+  font-size: 1.4rem;
+  font-weight: 700;
   color: var(--normal-shift-color);
-  font-weight: 600;
-}
-.slides .slide-content h4 {
-  font-size: 1rem;
-  color: var(--normal-shift-color);
-  font-weight: 600;
-}
-.slides .slide:nth-child(1) {
-  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.slides .slide:nth-child(2) {
-  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.slides .slide:nth-child(3) {
-  background-image: url(https://dorya.deothemes.com/wp-content/uploads/2021/10/post_1.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .awards {
@@ -618,5 +628,41 @@ a {
     align-items: center;
     justify-content: center;
     gap: 14px 0;
+  }
+}
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@-webkit-keyframes shadow-drop-tr {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-tr {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
   }
 }/*# sourceMappingURL=homeStyle.css.map */

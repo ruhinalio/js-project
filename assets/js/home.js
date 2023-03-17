@@ -8,15 +8,7 @@ projectsMenu.addEventListener("click", () => {
 
 
 
-// brand hissede renglerin deyismesi
-
-// for(var i =0; i<brandSide.length-1; i++){
-//     brandSide[i].addEventListener("click", ()=>{
-//         brandSide[i].classList.add("brand-active")
-//         serviceSide[i].classList.add("branding-active")
-//     })
-// }
-
+// brand hissesinde renglerin deyismesi ucun
 
 const elements = [...document.querySelectorAll(".brand")];
 const serviceSide = [...document.querySelectorAll(".service")];
@@ -40,3 +32,21 @@ elements.forEach((element, index) => {
     })
   });
 });
+
+// slide hissesi ucun
+const slides = document.querySelectorAll('.slide')
+
+for (const slide of slides) {
+    slide.addEventListener('click', () => {
+      clearActiveClasses()
+      
+      
+      slide.classList.add('active')
+    })
+}
+
+function clearActiveClasses() {
+    slides. forEach((slide) => {
+        slide. classList. remove('active')
+    })
+}
