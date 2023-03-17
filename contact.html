@@ -42,26 +42,30 @@
           alt=""
         />
       </div>
-      <i class="fa-solid fa-bars"></i>
-      <ul class="menu-links">
-        <li><a href="./index.html" class="menu-active">Home</a></li>
-        <li class="projects-menu">
-          <a>Projects</a>
-          <ul class="projects-side">
-            <li><a href="./projects.html">Flex</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-          </ul>
-        </li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li>
-          <a href="#">Pages</a>
-          <ul class="pages">
-            <li><a href="./about-us.html">About us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="#">404 Page</a></li>
-          </ul>
-        </li>
-      </ul>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="#" class="porjects-html" id="projects"
+              >Projects <img src="./assets/svgs/chevron-bottom.png" alt=""
+            /></a>
+            <ul class="projects-ul for-project">
+              <li class="li1"><a href="./projects.html">Flex</a></li>
+              <li class="li2"><a href="./slider.html">Slide</a></li>
+            </ul>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li>
+            <a href="#" class="pages-html" id="pages"
+              >Pages <img src="./assets/svgs/chevron-bottom.png" alt=""
+            /></a>
+            <ul class="projects-ul for-pages">
+              <li class="li1"><a href="./about-us.html">About</a></li>
+              <li class="li2"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="head container">
@@ -104,7 +108,7 @@
           <div class="form-top">
             <div class="name form-side">
               <h2>Name*</h2>
-              <input autocomplete="none"  type="text" name="name" />
+              <input autocomplete="none" type="text" name="name" />
             </div>
             <div class="mail form-side">
               <h2>E-mail*</h2>
@@ -113,7 +117,7 @@
           </div>
           <div class="message form-side">
             <h2>Message*</h2>
-            <input autocomplete="none"  type="text" name="message" />
+            <input autocomplete="none" type="text" name="message" />
           </div>
           <button type="reset" id="send-btn">Send Message</button>
         </form>
@@ -123,7 +127,6 @@
           <i class="fa-solid fa-x"></i>
           <p>Your message has been sent. Will be answered soon</p>
         </div>
-        
       </div>
     </section>
     <footer class="foter">

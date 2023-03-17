@@ -20,15 +20,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- css links -->
     <link rel="stylesheet" href="./assets/css/homeStyle.css" />
     <!-- aos link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Dora</title>
   </head>
   <body>
+    
     <header class="header container">
       <div class="logo">
         <img
@@ -36,58 +42,82 @@
           alt=""
         />
       </div>
-      <i class="fa-solid fa-bars"></i>
-      <ul class="menu-links"> 
-        <li><a href="./index.html" class="menu-active">Home</a></li>
-        <li class="projects-menu">
-          <a>Projects</a>
-          <ul class="projects-side">
-            <li><a href="./projects.html">Flex</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-           
-          </ul>
-        </li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li>
-          <a href="#">Pages</a>
-        <ul class="pages">
-          <li><a href="./about-us.html">About us</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="#">404 Page</a></li>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="#" class="porjects-html" id="projects"
+              >Projects <img src="./assets/svgs/chevron-bottom.png" alt=""
+            /></a>
+            <ul class="projects-ul  for-project ">
+              <li class="li1"><a href="./projects.html">Flex</a></li>
+              <li class="li2"><a href="./slider.html">Slide</a></li>
+            </ul>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li>
+            <a href="#"
+            class="pages-html"
+            id="pages"
+              >Pages <img src="./assets/svgs/chevron-bottom.png" alt=""
+            /></a>
+            <ul class="projects-ul  for-pages">
+              <li class="li1"><a href="./about-us.html">About</a></li>
+              <li class="li2"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </li>
         </ul>
-        </li>
-      </ul>
+      </nav>
     </header>
+    
     <section class="introduce container">
-      <div data-aos="fade-right"
-      class="introduce-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+      <div
+        data-aos="fade-right"
+        class="introduce-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <h1>Dorya</h1>
         <h2>We Design Brands</h2>
         <h2>Since 1995</h2>
       </div>
-      <section 
-      data-aos="fade-left"
-      
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-      class="dd introduce-right">
+      <section
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        class="dd introduce-right"
+      >
         <div class="hero__img-svg-container">
-          <svg class="hero__img-svg" viewBox="0 0 320 640" preserveAspectRatio="xMinYMin meet">
-              <path fill-rule="evenodd" fill="url(#hero__img-pattern-a6a6c15)" d="M-0.000,638.993 L-0.000,512.000 C106.039,512.000 192.000,426.038 192.000,320.000 C192.000,213.961 106.039,128.000 -0.000,128.000 L-0.000,0.006 C176.224,0.277 319.000,143.212 319.000,319.500 C319.000,495.788 176.224,638.723 -0.000,638.993 Z"/>
-              <defs>
-                  <pattern id="hero__img-pattern-a6a6c15" patternUnits="userSpaceOnUse" width="320" height="640">
-                      <image class="hero__img-image" xlink:href="https://dorya.deothemes.com/wp-content/uploads/2023/02/hero_img-1.jpg" x="0" y="0"></image>
-                  </pattern>
-              </defs>
+          <svg
+            class="hero__img-svg"
+            viewBox="0 0 320 640"
+            preserveAspectRatio="xMinYMin meet"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="url(#hero__img-pattern-a6a6c15)"
+              d="M-0.000,638.993 L-0.000,512.000 C106.039,512.000 192.000,426.038 192.000,320.000 C192.000,213.961 106.039,128.000 -0.000,128.000 L-0.000,0.006 C176.224,0.277 319.000,143.212 319.000,319.500 C319.000,495.788 176.224,638.723 -0.000,638.993 Z"
+            />
+            <defs>
+              <pattern
+                id="hero__img-pattern-a6a6c15"
+                patternUnits="userSpaceOnUse"
+                width="320"
+                height="640"
+              >
+                <image
+                  class="hero__img-image"
+                  xlink:href="https://dorya.deothemes.com/wp-content/uploads/2023/02/hero_img-1.jpg"
+                  x="0"
+                  y="0"
+                ></image>
+              </pattern>
+            </defs>
           </svg>
-      </div>
+        </div>
       </section>
-     
     </section>
 
-    
     <div class="social container">
       <h3>Social media:</h3>
       <div class="social-media">
@@ -109,13 +139,13 @@
     <section class="works container">
       <div class="works-left">
         <div class="work work1">
-          <div class="product "  >
+          <div class="product">
             <h3>Gen Z Glasses</h3>
             <a href="#">Product Design</a>
           </div>
         </div>
         <div class="work work2">
-          <div class="product"  >
+          <div class="product">
             <h3>Shoe Concept Design</h3>
             <a href="#">Product Design</a>
           </div>
@@ -124,13 +154,13 @@
       </div>
       <div class="works-right">
         <div class="work work3">
-          <div class="product "  >
+          <div class="product">
             <h3>Magazine Minimal Design</h3>
             <a href="#">Product Design</a>
           </div>
         </div>
         <div class="work work4">
-          <div class="product"  >
+          <div class="product">
             <h3>Onefourfive Clarendon</h3>
             <a href="#">Product Design</a>
           </div>
@@ -167,45 +197,49 @@
       <h2>Latest News</h2>
       <div class="slider-side">
         <div
-            class="slide active"
-            style="background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_2.jpg');"
+          class="slide active"
+          style="
+            background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_2.jpg');
+          "
         >
           <h3>The Hyper Flexible Seamlessly Connected Modern Working</h3>
         </div>
         <div
-            class="slide"
-            style="
-                background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_3-1536x1536.jpg');
-              "
+          class="slide"
+          style="
+            background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_3-1536x1536.jpg');
+          "
         >
           <h3>How an Idea Nobody Believed in Led to 8 Million Dollars</h3>
         </div>
         <div
-            class="slide"
-            style="
-                background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_4-1536x1536.jpg');
-              "
+          class="slide"
+          style="
+            background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_4-1536x1536.jpg');
+          "
         >
           <h3>How to Reject the Status Quo and Redefine Your Success</h3>
         </div>
         <div
-            class="slide"
-            style="
-                background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_5-1536x1536.jpg');
-              "
+          class="slide"
+          style="
+            background-image: url('https://dorya.deothemes.com/wp-content/uploads/2021/10/post_5-1536x1536.jpg');
+          "
         >
           <h3>3 Vision Board Alternatives You Must Try</h3>
         </div>
         <div
-            class="slide"
-            style="
-                background-image: url('https://dorya.deothemes.com/wp-content/uploads/2023/02/post_7-1536x1536.jpg');
-              "
+          class="slide"
+          style="
+            background-image: url('https://dorya.deothemes.com/wp-content/uploads/2023/02/post_7-1536x1536.jpg');
+          "
         >
-          <h3>10 Strategies for Successful Business Growth in the Digital Age</h3>
+          <h3>
+            10 Strategies for Successful Business Growth in the Digital Age
+          </h3>
         </div>
       </div>
-      <h3 class="more-blog"> <a href="./blog.html">More on the blog</a> </h3>
+      <h3 class="more-blog"><a href="./blog.html">More on the blog</a></h3>
     </section>
     <section class="awards container">
       <div class="awards-left">
@@ -310,7 +344,7 @@
         </div>
       </div>
     </footer>
-    
+
     <!-- aos js link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -318,5 +352,6 @@
     </script>
     <!-- mine js -->
     <script src="./assets/js/home.js"></script>
+    <!--  -->
   </body>
 </html>

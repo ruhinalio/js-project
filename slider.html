@@ -38,28 +38,32 @@
           alt=""
         />
       </div>
-      <i class="fa-solid fa-bars"></i>
-      <ul class="menu-links">
-        <li><a href="./index.html" class="menu-active">Home</a></li>
-        <li class="projects-menu">
-          <a>Projects</a>
-          <ul class="projects-side">
-            <li><a href="./projects.html">Flex</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-          </ul>
-        </li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li>
-          <a href="#">Pages</a>
-          <ul class="pages">
-            <li><a href="./about-us.html">About us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="#">404 Page</a></li>
-          </ul>
-        </li>
-      </ul>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="#" class="porjects-html" id="projects"
+              >Projects <img src="./assets/svgs/chevron-bottom.png" alt=""
+            /></a>
+            <ul class="projects-ul for-project">
+              <li class="li1"><a href="./projects.html">Flex</a></li>
+              <li class="li2"><a href="./slider.html">Slide</a></li>
+            </ul>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li>
+            <a href="#" class="pages-html" id="pages"
+              >Pages <img src="./assets/svgs/chevron-bottom.png" alt=""
+            /></a>
+            <ul class="projects-ul for-pages">
+              <li class="li1"><a href="./about-us.html">About</a></li>
+              <li class="li2"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class="slider my-4">
+    <section class="slider ">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -164,7 +168,7 @@
         </button>
       </div>
     </section>
-    <footer class="foter">
+    <footer class="foter" style="margin-top: 17rem;">
       <div class="container footer">
         <div class="footer-top">
           <h3>Got a Project?</h3>
